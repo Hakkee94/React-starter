@@ -1,0 +1,33 @@
+.input-item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.add-btn {
+    display: flex;
+}
+
+.input-time-form {
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.capital-time-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-zone-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-zone-list span{
+    padding-right: 20px;
+}
+
+.delete-button {
+    cursor: pointer;
+}

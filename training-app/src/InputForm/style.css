@@ -1,0 +1,38 @@
+.table-position {
+    display: flex;
+    justify-content: center;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-right: 20px;
+}
+
+label span {
+    padding-bottom: 10px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+button {
+    width: 70px;
+    border-radius: 5px;
+}
+
+th {
+    padding-right: 20px;
+
+}
