@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'
 
+
 const InputTimeForm = ({name, timeZone, form, setForm, setList}) => {
 
     const addNewZone = () => {
