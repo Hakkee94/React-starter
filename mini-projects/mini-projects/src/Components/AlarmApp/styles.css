@@ -1,0 +1,40 @@
+.alarm-add {
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title span {
+    font-size: 26px;
+}
+
+.alarm-input-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.alarm-input-form div {
+    padding-right: 15px;
+}
+
+.alarm-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    flex-direction: column;
+}
+
+.alarm-item {
+    display: flex;
+    justify-content: center;
+}
+
+.alarm-item span {
+    padding-right: 15px;
+}

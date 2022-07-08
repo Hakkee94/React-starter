@@ -12,6 +12,7 @@
     display: flex;
     padding-bottom: 50px;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .capital-time-list {
@@ -21,7 +22,7 @@
 
 .time-zone-list {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .time-zone-list span{

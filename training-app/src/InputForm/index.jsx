@@ -9,11 +9,11 @@ const InputForm = ({form, setForm, setActivity, edit}) => {
             setActivity(prev => prev.map((item, index) => {
                 if (index === edit) {
                     return form
-                }   else {
+                } else {
                     return item
                 }
             }))
-        }   else {
+        } else {
             setActivity(prev => [...prev, form])
         }
         console.log(form)

@@ -1,0 +1,50 @@
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.annonymous-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    width: 400px;
+    border: 2px solid;
+}
+
+button {
+    background-color: lawngreen;
+}
+
+.input-message {
+    display: flex;
+    justify-content: center;
+}
+
+.message-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.my-message {
+    padding-left: 150px;
+}
+
+.foreign-message {
+    padding-right: 150px;
+}
+
+h3 {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+

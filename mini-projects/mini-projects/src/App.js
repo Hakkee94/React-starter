@@ -1,12 +1,14 @@
 import './App.css';
-import WorldClock from './Components/WorldClock/Index'
-import {useState} from "react";
-import { v4 as uuidv4 } from 'uuid';
+import WorldClock from "./Components/WorldClock/WorldClock";
+import AlarmApp from "./Components/AlarmApp/Components/AlarmApp";
+import Chat from "./Components/AnonymousChat";
+import Crud from "./Components/Crud/Crud";
 
 window.data = {id: 55, city: {zip: 333333, name: "Moscow"}}
 
 function App() {
   const [state, setState] = useState(true)
+
 
     return (
         <div className="App">
@@ -15,9 +17,10 @@ function App() {
           console.log("app data", window.data)
         }}/>
             {/*<PhotoManager/>*/}
-          <button onClick={() => setState(!state)}>Click</button>
-          {state && <WorldClock location={window.data}/>}
-          {uuidv4()}
+            {/*<WorldClock/>*/}
+            {/*<AlarmApp/>*/}
+            {/*<Chat/>*/}
+            <Crud/>
         </div>
     );
 }

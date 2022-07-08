@@ -2,7 +2,7 @@ import React from 'react';
 
 const CapitalTimeList = ({list, setList}) => {
     let now = new Date()
-    let hours = Number.parseInt(now.getHours()) // .getTimezoneOffset()
+    let hours = Number.parseInt(now.getHours() - 3) // .getTimezoneOffset()
     let minutes = now.getMinutes()
     let seconds = now.getSeconds()
 
