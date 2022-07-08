@@ -1,16 +1,21 @@
 import './App.css';
 import WorldClock from "./Components/WorldClock/WorldClock";
-import InputTimeForm from "./Components/WorldClock/InputTimeForm";
+import AlarmApp from "./Components/AlarmApp/Components/AlarmApp";
+import Chat from "./Components/AnonymousChat";
+import Crud from "./Components/Crud/Crud";
+
 
 function App() {
-
 
 
 
     return (
         <div className="App">
             {/*<PhotoManager/>*/}
-            <WorldClock inputTimeForm={InputTimeForm} />
+            {/*<WorldClock/>*/}
+            {/*<AlarmApp/>*/}
+            {/*<Chat/>*/}
+            <Crud/>
         </div>
     );
 }
