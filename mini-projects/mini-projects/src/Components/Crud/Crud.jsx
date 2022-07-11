@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import NoteList from "./NoteList";
 import InputNote from "./InputNote";
+import './style.css'
 
 
 
