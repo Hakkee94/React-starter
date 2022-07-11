@@ -9,16 +9,27 @@ const User = {
   }
 }
 
-const WorldClock = () => {
+
+console.log('1 outside component') // willMount
+
+const WorldClock = ({location}) => {
   const [form, setForm] = useState({name: '', timeZone: ''})
   const [list, setList] = useState([])
   const [user, setUser] = useState([])
-
+  console.log(location)
   useEffect(() => {
-    setUser(User.getName(" common right reserved"))
+    console.log('4 useEffect DidMount') // DidMount
+
+    return () => {
+      console.log('-- useEffect WillUnmount') // WillUnmount
+    }
   }, []) // 1 ver.
 
-  console.log(performance.now())
+  useEffect(() => {
+    console.log('useEffect DidUpdate') // DidUpdate
+  }, [list.length]) // 1 ver.
+
+  console.log('2 render') // will Render
 
   return (
     <div className="App">
