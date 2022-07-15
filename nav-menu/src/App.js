@@ -1,7 +1,8 @@
 import {Routes, Route, NavLink} from "react-router-dom";
 
 function Menu() {
-    return null;
+    return null; //вернуть 3 ссылки со стилями
+
 }
 
 function HomePage() {
@@ -75,10 +76,22 @@ function TimeAttackPage() {
 
 
 export default function App() {
+    const activeStyle = {borderBottom: 'solid green', textDecoration: 'none'}
+
     return (
         <div>
             <Menu/>
             <div className="page">
+                <div className='nav-link'>
+                    <NavLink to="/"
+                             style={({isActive}) => isActive ? activeStyle : undefined}>HomePage</NavLink>
+                    <NavLink to="/drift"
+                             style={({isActive}) => isActive ? activeStyle : undefined}>DriftPage</NavLink>
+                    <NavLink to="/timeattack"
+                             style={({isActive}) => isActive ? activeStyle : undefined}>TimeAttackPage</NavLink>
+                    <NavLink to="/forza" style={({isActive}) => isActive ? activeStyle : undefined}>ForzaPage</NavLink>
+                </div>
+
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/drift" element={<DriftPage/>}/>

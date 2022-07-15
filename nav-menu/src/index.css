@@ -84,3 +84,13 @@ body {
   opacity: 1;
   border-bottom-color: hsl(120, 50%, 50%);
 }
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
