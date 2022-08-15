@@ -4,6 +4,7 @@ import AlarmApp from "./Components/AlarmApp/Components/AlarmApp";
 import Chat from "./Components/AnonymousChat";
 import PhotoManager from './Components/PhotoManager/PhotoManager'
 import Crud from "./Components/Crud/Crud";
+import Form from "./Components/Form";
 import {Routes, Route, NavLink} from "react-router-dom";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/alarm" element={<AlarmApp/>}/>
                 <Route path="/chat" element={<Chat/>}/>
                 <Route path="/crud" element={<Crud/>}/>
+                <Route path="/form" element={<Form/>}/>
             </Routes>
         </div>
     );

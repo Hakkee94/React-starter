@@ -1,4 +1,8 @@
-import {Routes, Route, NavLink} from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function Menu() {
     return null;
@@ -76,7 +80,7 @@ function TimeAttackPage() {
 
 export default function App() {
     return (
-        <div>
+        <BrowserRouter>
             <Menu/>
             <div className="page">
                 <Routes>
@@ -85,8 +89,7 @@ export default function App() {
                     <Route path="/timeattack" element={<TimeAttackPage/>}/>
                     <Route path="/forza" element={<ForzaPage/>}/>
                 </Routes>
-
             </div>
-        </div>
+        </BrowserRouter>
     );
 }
