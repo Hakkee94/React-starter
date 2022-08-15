@@ -23,7 +23,7 @@ const PostList = () => {
     return (
         <div>
             {posts.map((item, key) => {
-                return <PostItem content={item.content} id={item.id}/>
+                return <PostItem key={item.id} content={item.content} id={item.id}/>
             })}
         </div>
     );

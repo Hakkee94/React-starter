@@ -18,12 +18,17 @@ router.get('/posts', async (ctx, next) => {
     ctx.response.body = posts;
 });
 
+router.get('/posts/:id', async (ctx, next) => {
+    const {id} = ctx.params;
+    ctx.response.body = posts.find(f => f.id === Number(id));
+});
+
 router.post('/posts', async(ctx, next) => {
     const {id, content} = ctx.request.body;
 
     if (id !== 0) {
-        posts = posts.map(o => o.id !== id ? o : {...o, content: content});
-        ctx.response.status = 204;
+        posts = posts.map(o => o.id !== Number(id) ? o : {...o, content: content});
+        ctx.response.body = posts;
         return;
     }
 

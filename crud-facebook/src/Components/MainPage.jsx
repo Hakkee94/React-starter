@@ -4,7 +4,7 @@ import PostList from "./PostList";
 
 const MainPage = () => {
     return (
-        <div>
+        <div className='facebook-app'>
             <LinkToCreateForm/>
             <PostList/>
         </div>

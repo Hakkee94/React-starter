@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+}
+
 .create-post-form {
   width: 600px;
   height: 50px;
@@ -30,14 +35,94 @@ code {
 .create-post {
   display: flex;
   width: 75px;
-  height: 18px;
+  height: 40px;
   background-color: cornflowerblue;
   margin: 10px;
   border: 0;
   align-items: center;
+  text-decoration: none;
 }
 
 .crud {
   display: flex;
   justify-content: center;
+}
+
+.facebook-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.comment {
+  margin-left: 15px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.like {
+  width: 20px;
+  cursor: pointer;
+}
+
+.link-to-post {
+  padding: 20px 0 20px 0;
+}
+
+.post-content {
+  padding: 5px 0 5px;
+}
+
+.writer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.comment-form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+  width: 380px;
+}
+
+.post-item {
+  padding-top: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  border: 0px;
+  border-radius: 4px;
+  padding: 40px;
+  margin: 30px 0 30px;
+}
+
+.publish-btn {
+  border: 1px;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 4px;
 }

@@ -6,6 +6,7 @@ const CreatePostForm = () => {
 
     const [createPost, setCreatePost] = useState('')
     const navigate = useNavigate()
+
     const handleCreatePost = () => {
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -29,10 +30,19 @@ const CreatePostForm = () => {
     }
 
     return (
-        <div>
-            <NavLink to='/' >x</NavLink>
-            <textarea onChange={(event) => setCreatePost(event.target.value)}/>
-            <button onClick={handleCreatePost}>Опубликовать</button>
+        <div className='new-post'>
+            <div style={{display: 'flex', alignSelf: 'end'}}>
+                <NavLink to='/' >x</NavLink>
+            </div>
+
+            <div>
+                <textarea onChange={(event) => setCreatePost(event.target.value)}/>
+            </div>
+
+            <div>
+                <button className='publish-btn' onClick={handleCreatePost}>Опубликовать</button>
+            </div>
+
         </div>
     );
 };
