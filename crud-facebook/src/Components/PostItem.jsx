@@ -1,43 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink, useParams} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
-import {useCallback} from "react";
-
+import {onEditPost} from '../redux/postSlice'
+import {useDispatch} from "react-redux";
 
 const PostItem = ({content, id}) => {
-    var now = new Date().toLocaleTimeString().slice(0, -3);
+    const now = new Date().toLocaleTimeString().slice(0, -3);
     const params = useParams()
-    console.log(params)
     const navigate = useNavigate()
-
+    const dispatch = useDispatch()
 
     const [text, setText] = useState(content)
     const [isEdit, setIsEdit] = useState(false)
-    const [postList, setPostList] = useState([])
 
     const handleChangePost = async () => {
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-
-        var raw = JSON.stringify({
-            "id": params.id,
-            "content": text
-        });
-
-        var requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-
-        try {
-            const response = await fetch("http://localhost:7777/posts", requestOptions)
-            await response.text()
-            navigate('/')
-        } catch (er) {
-            console.log(er)
-        }
+        dispatch(onEditPost({params, text, navigate}))
     }
 
     const handleDeletePost = async () => {
