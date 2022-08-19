@@ -4,5 +4,4 @@ import listReducer from "./listReducer";
 
 export const rootReducer = combineReducers({
     likes, listReducer
-
 })
